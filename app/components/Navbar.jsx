@@ -126,10 +126,11 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <a
-            href="#contact"
+            href="./Muhammed_Abdelraouf_CV.pdf"
+            download
             className="hidden md:inline-flex text-sm font-medium px-4 py-2 rounded-full bg-black dark:bg-white text-white dark:text-black hover:opacity-80 transition-opacity"
           >
-            Hire me
+            Download CV
           </a>
         </div>
       </nav>

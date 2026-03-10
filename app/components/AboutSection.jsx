@@ -63,7 +63,7 @@ export default function AboutSection() {
           {/* Actions */}
           <div className="flex items-center gap-4">
             <a
-              href="/cv.pdf"
+              href="/Muhammed_Abdelraouf_CV.pdf"
               download
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black dark:bg-white text-white dark:text-black text-sm font-medium hover:opacity-80 transition-opacity"
             >
@@ -82,13 +82,6 @@ export default function AboutSection() {
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-            </a>
-
-            <a
-              href="#contact"
-              className="inline-flex text-sm font-medium text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors"
-            >
-              Get in touch →
             </a>
           </div>
         </div>

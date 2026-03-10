@@ -8,6 +8,19 @@ const nextConfig = {
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: "/:file*.pdf",
+        headers: [
+          {
+            key: "Content-Disposition",
+            value: "attachment",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
