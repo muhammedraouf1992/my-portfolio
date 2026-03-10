@@ -10,7 +10,7 @@ export default function AboutSection() {
         <div className="relative aspect-[3/4] w-full max-w-sm mx-auto md:mx-0 rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5">
           {/* Replace /about.jpg with your actual photo */}
           <Image
-            src="/wordpress.png"
+            src="/About-Image.jpeg"
             alt="Raouf"
             fill
             className="object-contain p-8"
