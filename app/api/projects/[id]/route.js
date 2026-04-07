@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
+import { revalidatePath } from "next/cache";
 import prisma from "@/app/lib/prisma";
 
 export async function PUT(request, { params }) {
@@ -18,6 +19,7 @@ export async function PUT(request, { params }) {
       where: { id },
       data: { title, description, image, tag, href, featured },
     });
+    revalidatePath("/");
     return NextResponse.json(project);
   } catch {
     return NextResponse.json(
@@ -37,6 +39,7 @@ export async function DELETE(request, { params }) {
     const { id: rawId } = await params;
     const id = parseInt(rawId);
     await prisma.project.delete({ where: { id } });
+    revalidatePath("/");
     return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json(
