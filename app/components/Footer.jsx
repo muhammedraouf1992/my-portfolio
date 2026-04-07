@@ -1,7 +1,7 @@
 const LINKS = [
-  { label: "GitHub", href: "https://github.com/" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/" },
-  { label: "Email", href: "mailto:hello@raouf.dev" },
+  { label: "GitHub", href: "https://github.com/muhammedraouf1992" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/muhammedraouf92/" },
+  { label: "Email", href: "mailto:mohamedraouf27@gmail.com" },
 ];
 
 const NAV_LINKS = [
